@@ -1,0 +1,148 @@
+//header start
+.header
+{
+  background-color: #16030D;
+  .clr
+  {
+    color: white;
+  }
+  .logo
+  {
+    width: 50px;
+    background-color: #16030D;
+    // border-color: 2px solid red !important;
+  }
+}
+//header end
+
+//hero-section start
+.hero-section
+{
+  background-image: url(./Media/bghero.png);
+  background-position: cover;
+  background-size: cover;
+  background-repeat: no-repeat;
+  // height: 800px;
+  color: white;
+  h1
+  {
+    margin-top: 15rem;
+  }
+  .sdsfd
+  {
+    display: inline-block;
+  }
+  .btn2
+  {
+    width: 40% !important;
+    margin-left: 5%;
+    color: white !important;
+    background: transparent;
+    border: 2px solid white !important;
+  }
+  .btn
+  {
+    width: 50%;
+    color: #C62828;
+    height: 42px;
+  }
+  p{
+    display: inline-block;
+  }
+  .cakeImg
+  {
+    width: 30px;
+  }
+
+
+  .slider
+  {
+    margin-top: 12rem;
+    color: white !important;
+    .sliderImg
+  {
+    // height: 30rem;
+    height: auto;
+    // width: 80% !important;
+  }
+  }
+  .tokenImg
+  {
+    width: 25%;
+    margin-bottom: 3rem;
+  }
+  .imgwd
+  {
+    width: 50%;
+  }
+  
+}
+//hero-section end
+
+
+
+//plateform-section Start
+.plateform-section
+{
+background-image: url(./Media/bgplatform.jpg);
+background-position: cover;
+background-size: cover;
+// padding-top: 23px;
+background-repeat: no-repeat;
+  img
+  {
+    margin-top: 10rem;
+  }
+}
+
+//plateform-section end
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//faqs start
+
+.styles_faq-row-wrapper__3vA1D .styles_faq-row__2YF3c {
+  
+    margin-bottom: 2rem;
+    background-color: white;
+    
+  }
+  .styles_faq-row-wrapper__3vA1D .styles_row-body__1NvUo .styles_faq-row__2YF3c .styles_row-title__1YiiY.styles_no-tabfocus__1HmyD {
+    padding-left: 24px;
+  }
+  
+  .faqs
+  {
+    // background-image: url(./Media/bg3.png);
+    background-color: burlywood;
+    padding-top: 60px;
+  }
+  //Faqs end
