@@ -1,3 +1,8 @@
+body
+{
+  color: white !important;
+}
+
 //header start
 .header
 {
@@ -68,7 +73,7 @@
   }
   .tokenImg
   {
-    width: 25%;
+    width: 21%;
     margin-bottom: 3rem;
   }
   .imgwd
@@ -85,26 +90,122 @@
 .plateform-section
 {
 background-image: url(./Media/bgplatform.jpg);
-background-position: cover;
+background-position: center;
 background-size: cover;
 // padding-top: 23px;
 background-repeat: no-repeat;
   img
   {
-    margin-top: 10rem;
+    margin-top: 9rem;
+    margin-bottom: 5rem;
   }
+  
 }
-
+h2
+  {
+    margin-top: 9rem !important;
+  }
 //plateform-section end
 
 
+//feature-section start
+.feature-section
+{
+  background-image: url(./Media/bgfeature.jpg);
+  background-position: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  align-content: center;
+  .cardImg
+  {
+    width: 30%;
+    margin-bottom: 10px;
+  }
+  .imgLogo
+  {
+    margin-top: 80px;
+    margin-bottom: 100px;
+    width: 60%;
+  }
+  .pic2
+  {
+    width: 47%;
+    // height: 110px !important;
+  }
+  .pic3
+  {
+    width: 27%;
+  }
+}
+//feature-section end
+
+//video-section start
+.video-section
+{
+  background-color: #16030D;
+}
+
+//video-section end
+
+//imgBenefitPresale-section start
+.imgBenefitPresale-section
+{
+  .img-section
+  {
+    background-color: #2D061B;
+  }
+  .benefit-section
+  {
+    background-image: url(https://povo-site.netlify.app/static/media/bassasah.f675e964.png);
+    background-position: cover;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .presale-section
+  {
+    background-image: url(./Media/bgfeature.jpg);
+    background-position: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+   
+  }
+
+}
+//imgBenefitPresale-section end
 
 
+//mission-section start
+.mission-section
+{background-image: url(https://povo-site.netlify.app/static/media/wwww.fbb188c2.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  // background-attachment: center;
+  background-size: cover;
+  .img1
+  {
+    margin-top: 12rem !important;
+    width: 60%;
+  }
+  .col2
+  {
+    margin-top: 12rem;
+  }
+}
+//
 
-
-
-
-
+//vision-section start
+.vision-section
+{
+  background-image: url(https://povo-site.netlify.app/static/media/asssasa.ae7125e1.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  // background-attachment: center;
+  background-size: cover;
+  
+}
 
 
 

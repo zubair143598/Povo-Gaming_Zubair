@@ -95,12 +95,13 @@ const Hero = () => {
               </Carousel>
             </div>
             {/* <div className="col-md-6"></div> */}
-            <div className="col-md-12 text-center mt-5">
-              <span className="border bg-danger p-2 px-4">Token address</span>
-              <p className="border p-2 px-4 ">
-                0x2a2d03a47ae6220312337d1f094badcd1ee948cc
+            <div className="col-md-12  text-center mt-5">
+              <span className="border col-6 bg-danger p-2 px-4">Token address</span>
+              <p className="border col-6 p-2 px-4 ">
+                0x2a2d03a47ae62203
               </p>
-              <div className="col-md-12">
+                </div>
+              <div className="col-md-12 col-12">
                 <img
                   className="tokenImg mx-2"
                   src="./Assists/certik.png"
@@ -109,7 +110,6 @@ const Hero = () => {
                 <img className="tokenImg mx-5" src="./Assists/pcs.png" alt="" />
                 <img className="tokenImg mx-2" src="./Assists/xt.png" alt="" />
               </div>
-            </div>
           </div>
         </div>
         <div className="row text-center ">
