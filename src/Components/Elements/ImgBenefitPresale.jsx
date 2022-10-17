@@ -1,34 +1,17 @@
 import Button from "react-bootstrap/Button";
 import Modal from "react-bootstrap/Modal";
-import React from 'react'
+import React, { useState } from "react";
 
-function MyVerticallyCenteredModal(props) {
-  return (
-    <Modal
-    className="bg-transparent"
-      {...props}
-      size="lg"
-      aria-labelledby="contained-modal-title-vcenter"
-      centered
-    >
-      <Modal.Header closeButton className="bg-black" >
-        <Modal.Title className="bg-black" id="contained-modal-title-vcenter">
-          Modal heading
-        </Modal.Title>
-      </Modal.Header>
-      <Modal.Body className="bg-black">
-        <h4>Centered Modal</h4>
-        <p className="bg-black">
-          Cras mattis consectetur purus sit amet fermentum. Cras justo odio,
-          dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac
-          consectetur ac, vestibulum at eros.
-        </p>
-      </Modal.Body>
-    </Modal>
-  );
-}
 const ImgBenefitPresale = () => {
-  const [modalShow, setModalShow] = React.useState(false);
+  const [show, setShow] = useState(false);
+
+  const handleClose = () => setShow(false);
+  const handleShow = () => setShow(true);
+  const [data, setData] = useState({
+    title: "",
+    text: "",
+  });
+
   return (
     <div className="imgBenefitPresale-section">
       <div className="img-section">
@@ -68,63 +51,79 @@ const ImgBenefitPresale = () => {
               <h5 className="fw-bolder mt-4">Withdraw funds using PayPal</h5>
             </div>
             <div className="col-md-6">
-              <img
-                src="https://povo-site.netlify.app/static/media/benefit.568264db.png"
-                className="w-100 mb-5"
-                alt=""
-              />
+              <img src="./Assists/10008.png" className="w-100 mb-5" alt="" />
             </div>
           </div>
         </div>
       </div>
-      <div className="presale-section">
-        <div className="container">
-          <div className="row">
-            <div className="col-md-12 text-center mt-5">
-              <h1>
-                Platforms going <span style={{ color: "darkred" }}>Live</span>{" "}
-                after PreSale
-              </h1>
+      <React.Fragment>
+        <div className="presale-section">
+          <div className="container">
+            <div className="row">
+              <div className="col-md-12 text-center mt-5">
+                <h1>
+                  Platforms going <span style={{ color: "darkred" }}>Live</span>{" "}
+                  after PreSale
+                </h1>
+              </div>
             </div>
-          </div>
 
-          <div className="row text-center">
-            <div className="col-md-4 ">
-              <h2>Fractionless field</h2>
-              <Button className="w-30 fw-bolder bg-light text-danger mt-3" variant="primary" onClick={() => setModalShow(true)}>
-                Read more
-              </Button>
-
-              <MyVerticallyCenteredModal
-                show={modalShow}
-                onHide={() => setModalShow(false)}
-              />
-            </div>
-            <div className="col-md-4 ">
-              <h2>Fractionless field</h2>
-              <Button className="w-30 fw-bolder bg-light text-danger mt-3" variant="primary" onClick={() => setModalShow(true)}>
-                Read more
-              </Button>
-
-              <MyVerticallyCenteredModal
-                show={modalShow}
-                onHide={() => setModalShow(false)}
-              />
-            </div>
-            <div className="col-md-4 ">
-              <h2>Fractionless field</h2>
-              <Button className="w-30 btn mb-5 fw-bolder bg-light text-danger mt-3" variant="primary" onClick={() => setModalShow(true)}>
-                Read more
-              </Button>
-
-              <MyVerticallyCenteredModal
-                show={modalShow}
-                onHide={() => setModalShow(false)}
-              />
+            <div className="row text-center">
+              <div className="col-md-4 ">
+                <h2 className="fw-bolder ">Fractionless field</h2>
+                <button
+                  className="btn text-danger bg-white mb-5 fw-bolder fs-5"
+                  onClick={() => {
+                    setData({
+                      title: "Governance in gaming",
+                      text: "The nature of governance in the gaming community is somewhat, centralized governance structure. The founders of each gaming clan are mostly it’s leaders too. These include, the administrators of the system, the owners of the server, the savvy programmers are the only ones in most cases to participate in the important decision making of the platform. These fast paced gaming structure requires a central leadershipfor its in-game operations. However, the governance of gaming extends far than the in-game structure. The leadership is much more democratic outside the gaming platform, where they organize and participate in discussion and suggestion platforms.",
+                    });
+                    handleShow();
+                  }}
+                >
+                  Read More
+                </button>
+              </div>
+              <div className="col-md-4 ">
+                <h2 className="fw-bolder">Governance in gaming</h2>
+                <button
+                  className="btn mt-3 text-danger bg-white mb-5 fw-bolder fs-5"
+                  onClick={() => {
+                    setData({
+                      title: "Governance in gaming",
+                      text: "The nature of governance in the gaming community is somewhat, centralized governance structure. The founders of each gaming clan are mostly it’s leaders too. These include, the administrators of the system, the owners of the server, the savvy programmers are the only ones in most cases to participate in the important decision making of the platform. These fast paced gaming structure requires a central leadershipfor its in-game operations. However, the governance of gaming extends far than the in-game structure. The leadership is much more democratic outside the gaming platform, where they organize and participate in discussion and suggestion platforms.",
+                    });
+                    handleShow();
+                  }}
+                >
+                  Read More
+                </button>
+              </div>
+              <div className="col-md-4 ">
+                <h2 className="fw-bolder">Staking in gaming</h2>
+                <button
+                  className="btn text-danger bg-white mb-5 fw-bolder fs-5"
+                  onClick={() => {
+                    setData({
+                      title: "Staking in gaming",
+                      text: "The integration of DeFi in the online gaming community is the hidden gem to generate passive income. The two communities have joined to give birth to their brainchild, ‘cryptocurrency gaming’. The concept works as follow, there are a number of games available online, which incorporate blockchain technology. Gamer enthusiasts around the globe play to earn. The players in these games earn rewards in form of cryptocurrencies. The users than use their tokens to earn reward through staking them. This works on the concept of proof of stake. These gamers also earn governance tokens to participate in important decision making of the platform.",
+                    });
+                    handleShow();
+                  }}
+                >
+                  Read More
+                </button>
+              </div>
             </div>
           </div>
         </div>
-      </div>
+        <Modal show={show} onHide={handleClose}>
+          <Modal.Header closeButton>
+            <Modal.Title>{data.title}</Modal.Title>
+          </Modal.Header>
+          <Modal.Body>{data.text}</Modal.Body>
+        </Modal>
+      </React.Fragment>
     </div>
   );
 };

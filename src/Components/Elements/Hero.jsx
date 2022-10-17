@@ -28,16 +28,16 @@ const Hero = () => {
               Povo is deflationary in it's nature
             </h3>
             </div>
-            <button className="btn mt-5 btn-light border-dark  ">
+            <button className="btn  mt-5 btn-light border-dark  ">
               <img
                 src="./Assists/pancakeswap-cake-logo.png"
-                className="cakeImg"
+                className=" cakeImg"
                 alt=""
               />
               <p className="fw-bolder ">Trade on pancakeswap</p>
             </button>
             <button className="btn fs-5 btn2 mt-5 btn-light border-dark  ">
-              Whitepaper{" "}
+              Whitepaper
             </button>
             <p className="mt-5">
               <AiOutlineMedium size={30} />

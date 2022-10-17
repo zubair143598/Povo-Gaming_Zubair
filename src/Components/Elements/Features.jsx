@@ -1,13 +1,23 @@
 import React, { useState } from "react";
-import Button from "react-bootstrap/Button";
 import Modal from "react-bootstrap/Modal";
 
 const Features = () => {
   const [show, setShow] = useState(false);
+
+  const handleClose = () => setShow(false);
+  const handleShow = () => setShow(true);
+const [data, setData] = useState({
+  title:'',
+  text:''
+})
   return (
+    <React.Fragment>
+
+    
     <div className="feature-section">
       <div className="container text-center">
         <div className="row">
+          <div className="col-md-12 mt-5"><h1>Povo Features</h1></div>
           <div className="col-md-4  ">
             <div
               className="card mb-3 border-0 mt-5 bg-light"
@@ -22,32 +32,22 @@ const Features = () => {
                 <h4 className="card-subtitle fw-bolder mb-2 text-danger">
                   In-Game item <br /> grafting
                 </h4>
-                <p className="card-text fw-bolder text-black pb-3">
+                <p className="card-text fw-bolder text-muted pb-3">
                 In-game items crafting is a skill or set of skills option specifically provides in massively multiplayer online games or role playing games
                 </p>
                 <div className="col text-end">
-                  <Button
-                    className="bg-transparent text-danger"
-                    style={{ border: "none", borderBottom: "2px solid black" }}
-                    onClick={() => setShow(true)}
-                  >
-                    read more
-                  </Button>
+                 <button className="btn text-warning fw-bolder fs-5" onClick={()=>{
+                    setData({
+                      title:'In-game items crafting',
+                      text:'In-game items crafting is a skill or set of skills option specifically provides in massively multiplayer online games or role playing games and other game genres. It allows the users to use basic tools within the game to construct a tool for themselves to use later, more likely for the purpose of competitive edge over other participants. Other game genres where crafting tool is available are, FPS team fortress 2, which allows its users to combine different weapons to create a new one. Or, sandbox Minecraft, which allows players to create and repair their weapons.'
+                    })
+                    handleShow()
+                 }}>
+                  Read more
+                 </button>
                 </div>
 
-                <Modal
-                  show={show}
-                  onHide={() => setShow(false)}
-                  dialogClassName="modal-50w"
-                  aria-labelledby="example-custom-modal-styling-title"
-                >
-                    
-                  <Modal.Body>
-                    <p className="text-black">
-                    In-game items crafting is a skill or set of skills option specifically provides in massively multiplayer online games or role playing games and other game genres. It allows the users to use basic tools within the game to construct a tool for themselves to use later, more likely for the purpose of competitive edge over other participants. Other game genres where crafting tool is available are, FPS team fortress 2, which allows its users to combine different weapons to create a new one. Or, sandbox Minecraft, which allows players to create and repair their weapons.
-                    </p>
-                  </Modal.Body>
-                </Modal>
+               
               </div>
             </div>
           </div>
@@ -72,27 +72,19 @@ const Features = () => {
                   temporibus ipsam atque a dolores
                 </p>
                 <div className="col text-end">
-                  <Button
-                    className="bg-transparent text-warning"
-                    style={{ border: "none", borderBottom: "2px solid black" }}
-                    onClick={() => setShow(true)}
-                  >
-                    read more
-                  </Button>
+                  <button 
+                  className="btn text-warning fw-bolder fs-5"
+                  onClick={()=>{
+                    setData({
+                      title:'Cross-chain interoperability and custom wallets',
+                      text:'DeFi has a motive to incorporate traditional financial services in the cryptocurrency ecosystem. This can only be possible if each blockchain in the ecosystem can communicate and transfer information and data to other blockchains. A reliable and smooth transaction among these blockchain will enable to introduce traditional financial services to the digital currency ecosystem. Moreover, some platforms offer custom wallets where one can store more than one currency and use the interchangeable.'
+                    })
+                    handleShow()
+                  }}
+                  >Read more</button>
                 </div>
 
-                <Modal
-                  show={show}
-                  onHide={() => setShow(false)}
-                  dialogClassName="modal-50w"
-                  aria-labelledby="example-custom-modal-styling-title"
-                >
-                  <Modal.Body>
-                    <p className="text-black">
-                    In-game items crafting is a skill or set of skills option specifically provides in massively multiplayer online games or role playing games and other game genres. It allows the users to use basic tools within the game to construct a tool for themselves to use later, more likely for the purpose of competitive edge over other participants. Other game genres where crafting tool is available are, FPS team fortress 2, which allows its users to combine different weapons to create a new one. Or, sandbox Minecraft, which allows players to create and repair their weapons.
-                    </p>
-                  </Modal.Body>
-                </Modal>
+                
               </div>
             </div>
           </div>
@@ -104,7 +96,7 @@ const Features = () => {
             >
               <div className="card-body ">
                 <img
-                  src="https://povo-site.netlify.app/static/media/h3.c5f8acdf.png"
+                  src="./Assists/10009.png"
                   className="card-img-top pic3 cardImg"
                   alt="..."
                 />
@@ -118,27 +110,20 @@ const Features = () => {
                   temporibus ipsam atque a dolores
                 </p>
                 <div className="col text-end">
-                  <Button
-                    className="bg-transparent text-danger"
-                    style={{ border: "none", borderBottom: "2px solid black" }}
-                    onClick={() => setShow(true)}
-                  >
-                    read more
-                  </Button>
+                  <button
+                  className="btn text-warning fw-bolder fs-5"
+
+                  onClick={()=>{
+                    setData({
+                      title:"Multiverse gaming",
+                      text:"The concept of multiverse gaming can be described as a set of parallel world, where theplayers can theoretically travel from one universe to the other with advancements in their levels and gaming tools. Sharded virtual worlds such as Ultima online are similar innature to multiverse games, however transportation and communication in sharderd worlds is not as easy as the traditional multiverse games"
+                    })
+                    handleShow()
+                  }}
+                  >Read more</button>
                 </div>
 
-                <Modal
-                  show={show}
-                  onHide={() => setShow(false)}
-                  dialogClassName="modal-50w"
-                  aria-labelledby="example-custom-modal-styling-title"
-                >
-                  <Modal.Body>
-                    <p className="text-black">
-                    In-game items crafting is a skill or set of skills option specifically provides in massively multiplayer online games or role playing games and other game genres. It allows the users to use basic tools within the game to construct a tool for themselves to use later, more likely for the purpose of competitive edge over other participants. Other game genres where crafting tool is available are, FPS team fortress 2, which allows its users to combine different weapons to create a new one. Or, sandbox Minecraft, which allows players to create and repair their weapons.
-                    </p>
-                  </Modal.Body>
-                </Modal>
+                
               </div>
             </div>
           </div>
@@ -164,32 +149,19 @@ const Features = () => {
                   within the game
                 </p>
                 <div className="col text-end">
-                  <Button
-                    className="bg-transparent text-warning"
-                    style={{ border: "none", borderBottom: "2px solid black" }}
-                    onClick={() => setShow(true)}
-                  >
-                    read more
-                  </Button>
+                  <button
+                  className="btn text-warning fw-bolder fs-5"
+                  onClick={()=>{
+                    setData({
+                      title:'Tokenize character items',
+                      text:'Povo is one of those games that have tokenized their characters. Meaning that, you can now advance your levels within the game and monetize your virtual rewards. These virtual rewards can then be converted in tangible assets, traded or swapped with other monetized digital funds. Povo made it possible through the use of Non-fungible tokens (NFTs). It uses NFTs to monetized your virtual rewards.'
+                    })
+                   handleShow()
+                  }}
+                  >Read sdmore</button>
                 </div>
 
-                <Modal
-                  show={show}
-                  onHide={() => setShow(false)}
-                  dialogClassName="modal-50w"
-                  aria-labelledby="example-custom-modal-styling-title"
-                >
-                  <Modal.Body>
-                    <p className="text-black">
-                      Povo is one of those games that have tokenized their
-                      characters. Meaning that, you can now advance your levels
-                      within the game doloribus debitis! Sit quasi quod
-                      accusamus eos quod. Ab quos consequuntur eaque quo rem!
-                      Mollitia reiciendis porro quo magni incidunt dolore amet
-                      atque facilis ipsum deleniti rem!
-                    </p>
-                  </Modal.Body>
-                </Modal>
+
               </div>
             </div>
           </div>
@@ -214,34 +186,20 @@ const Features = () => {
                   to securely
                 </p>
                 <div className="col text-end">
-                  <Button
-                    className="bg-transparent text-danger"
-                    style={{ border: "none", borderBottom: "2px solid black" }}
-                    onClick={() => setShow(true)}
-                  >
-                    read more
-                  </Button>
+                <button
+                  className="btn text-warning fw-bolder fs-5"
+                  onClick={()=>
+                  {
+                    setData({
+                      title:'Gamer/devs can introduce their own token',
+                      text:'Blockchain has revolutionized the world of gaming. It allows the projection of value in intangible assets. It helps gamers to securely store their in-game assets. These in-gameassets can then be stored in the form of a token. And these token can in turn be monetized or swapped with other digital funds. This facility is provided to both developers and gamers.'
+                    })
+                    handleShow()
+                  }}
+                  >Read more</button>
                 </div>
 
-                <Modal
-                  show={show}
-                  onHide={() => setShow(false)}
-                  dialogClassName="modal-50w"
-                  aria-labelledby="example-custom-modal-styling-title"
-                >
-                  <Modal.Body>
-                    <p className="text-black">
-                      Ipsum molestiae natus adipisci modi eligendi? Debitis amet
-                      quae unde commodi aspernatur enim, consectetur. Cumque
-                      deleniti temporibus ipsam atque a dolores quisquam
-                      quisquam adipisci possimus laboriosam. Quibusdam facilis
-                      doloribus debitis! Sit quasi quod accusamus eos quod. Ab
-                      quos consequuntur eaque quo rem! Mollitia reiciendis porro
-                      quo magni incidunt dolore amet atque facilis ipsum
-                      deleniti rem!
-                    </p>
-                  </Modal.Body>
-                </Modal>
+
               </div>
             </div>
           </div>
@@ -264,40 +222,31 @@ const Features = () => {
                 Decentralized applications are a set of programs that harness excess power from different nodes globally dsaf.
                 </p>
                 <div className="col text-end">
-                  <Button
-                    className="bg-transparent text-warning"
-                    style={{ border: "none", borderBottom: "2px solid black" }}
-                    onClick={() => setShow(true)}
-                  >
-                    read more
-                  </Button>
+                <button
+                  className="btn text-warning fw-bolder fs-5"
+                  onClick={()=>
+                  {
+                    setData({
+                      title:'Dapp Store and game studio integration',
+                      text:'Decentralized applications are a set of programs that harness excess power from different nodes globally. These are community driven application. One example of theseare bitcoins. The integration of Dapps and gaming can create a brainchild which will allow making features of blockchains in gaming. These features might include, a decentralized gaming structure, secure storage of in-game assets, trading of gaming tokens, and interoperability among different games.'
+                    })
+                    handleShow()
+                  }}
+                  >Read more</button>
                 </div>
-
-                <Modal
-                  show={show}
-                  onHide={() => setShow(false)}
-                  dialogClassName="modal-50w"
-                  aria-labelledby="example-custom-modal-styling-title"
-                >
-                  <Modal.Body>
-                    <p className="text-black">
-                      Ipsum molestiae natus adipisci modi eligendi? Debitis amet
-                      quae unde commodi aspernatur enim, consectetur. Cumque
-                      deleniti temporibus ipsam atque a dolores quisquam
-                      quisquam adipisci possimus laboriosam. Quibusdam facilis
-                      doloribus debitis! Sit quasi quod accusamus eos quod. Ab
-                      quos consequuntur eaque quo rem! Mollitia reiciendis porro
-                      quo magni incidunt dolore amet atque facilis ipsum
-                      deleniti rem!
-                    </p>
-                  </Modal.Body>
-                </Modal>
               </div>
             </div>
           </div>
         </div>
       </div>
     </div>
+    <Modal show={show} onHide={handleClose}>
+        <Modal.Header closeButton>
+          <Modal.Title>{data.title}</Modal.Title>
+        </Modal.Header>
+        <Modal.Body>{data.text}</Modal.Body>
+      </Modal>
+    </React.Fragment>
   );
 };
 

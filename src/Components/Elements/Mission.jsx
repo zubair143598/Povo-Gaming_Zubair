@@ -7,7 +7,7 @@ const Mission = () => {
         <div className="row">
           <div className="col-md-6 ">
             <img
-              src="https://povo-site.netlify.app/static/media/mission.10a1f619.png"
+              src="./Assists/10006.png"
               className="img1 my-5"
               alt=""
             />
@@ -32,6 +32,7 @@ const Mission = () => {
               specificplatform
             </p>
           </div>
+
         </div>
       </div>
     </div>
