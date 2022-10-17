@@ -17,6 +17,7 @@ const Home = () => {
     <>
     <Hero/>
     <Plateform/>
+    <Excluxive/>
     <Features/>
     <Video/>
     <ImgBenefitPresale/>
@@ -26,7 +27,6 @@ const Home = () => {
     <Proctected/>
     <Faqs/>
     <Friends/>
-    {/* <Excluxive/> */}
     </>
   )
 }

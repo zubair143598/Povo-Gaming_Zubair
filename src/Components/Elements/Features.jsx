@@ -10,10 +10,38 @@ const [data, setData] = useState({
   title:'',
   text:''
 })
-  return (
-    <React.Fragment>
 
+const obj=[
+  {
+    img:'1',
+    test:'1.1',
+    psara: '1.2',
+
+  },
+  {
+    img:'2',
+    test:'2.1',
+    psara: '2.2',
+
+  },
+  {
+    img:'',
+    test:'',
+    psara: '',
+
+  },{
+    img:'',
+    test:'',
+    psara: '',
+
+  },
+]
+  return (
+
+    <>
     
+   
+    <React.Fragment>
     <div className="feature-section">
       <div className="container text-center">
         <div className="row">
@@ -247,6 +275,7 @@ const [data, setData] = useState({
         <Modal.Body>{data.text}</Modal.Body>
       </Modal>
     </React.Fragment>
+    </>
   );
 };
 
