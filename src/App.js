@@ -13,7 +13,7 @@ function App() {
    <Base>
    <Routes>
     <Route index path='/' element={<Home/>} />
-    <Route index path='mapfun' element={<Mapfun/>} />
+    <Route index path='mapfun' element={<Mapfun/>} />{/* for my prictius use */}
    </Routes>
    </Base>
    </BrowserRouter>

@@ -72,21 +72,21 @@ const Hero = () => {
                 <Carousel.Item>
                   <img
                     className="d-block w-60 border sliderImg"
-                    src="./Assists/NFT1.d7c5ef8c.png"
+                    src="./Assists/1.png"
                     alt="First slide"
                   />
                 </Carousel.Item>
                 <Carousel.Item>
                   <img
                     className="d-block w-60 border sliderImg"
-                    src="./Assists/NFT2.ce0d0563.png"
+                    src="./Assists/2.png"
                     alt="Second slide"
                   />
                 </Carousel.Item>
                 <Carousel.Item>
                   <img
                     className="d-block w-60 border sliderImg"
-                    src="./Assists/NFT3.f7c6e745.png"
+                    src="./Assists/3.png"
                     alt="Third slide"
                   />
 
