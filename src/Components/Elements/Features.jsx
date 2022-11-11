@@ -16,7 +16,7 @@ const [data, setData] = useState({
   const data1 = [
     {
       img: "https://uploads-ssl.webflow.com/60c7783699e1051d74062f79/60c92caf0644a6350eba414b_1.svg",
-      title: "In-Game item grafting",
+      title: "In-Game item  grafting",
       text: `In-game items crafting is a skill or set of skills option
         specifically provides in massively multiplayer online games
       or role playing games In-game items crafting is a skill or set of skills option
@@ -62,27 +62,31 @@ const [data, setData] = useState({
       <div className="bg-black">
         <div className="container">
           <div className="row align-items-stretch">
-            
+            <div className="col-md-12 text-center">
+              <h1 className="mt-5">Povo Feature</h1>
+            </div>
             {data1.map((v, i) => {
               return (
                 <>
-                  <div className="col-md-4  text-center ">
+                  <div className="col-md-4 mt-4   text-center ">
                     <div
-                      className="card mb-3  border-0 mt-5 bg-light"
+                      className={`card  h-100  mb-3  border-0 mt-5 ${i%2===0 ? 'bg-light text-danger' : 'bg-danger text-white'}`}
                       style={{ width: "100%" }}
                     >
                       <div className="card-body ">
                         <img
                           src={v.img}
-                          className="card-img-top w-50  cardImg"
+                          style={{height:"150px"}}
+                          className="card-img-top w-50 cardImg"
                           alt="..."
                         />
-                        <h4 className="card-subtitle fw-bolder mb-2 text-danger">{v.title}</h4>
-                        <p className="card-text text-start fw-bolder text-muted pb-3">
+                        <h4 className="card-subtitle fw-bolder mb-2 ">{v.title}</h4>
+                        <p className={`card-text text-start fw-bolder  pb-3 ${i%2===0 ? "text-muted" : "text-white"}`}>
                             {v.text.slice(0, 135)}
                         </p>
                         <div className="text-end">
-                        <button onClick={() => handleShow(v.title, v.text)}>Read More</button>
+                        <button className="btn text-warning fs-5 readmore" 
+                        onClick={() => handleShow(v.title, v.text)}>Read More</button>
                         </div>
                       </div>
                       

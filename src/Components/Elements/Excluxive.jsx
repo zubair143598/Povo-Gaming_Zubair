@@ -51,9 +51,9 @@ const Excluxive = () => {
           dotListClass="custom-dot-list-style"
           itemClass="carousel-item-padding-40-px"
         >
-          <div><img className="w-100 p-2" src="./Assists/1.png" alt="" /></div>
-          <div><img className="w-100 p-2" src="./Assists/2.png" alt="" /></div>
-          <div><img className="w-100 p-2" src="./Assists/3.png" alt="" /></div>
+            <div><img className="w-100 p-2" src="./Assists/1.png" alt="" /></div>
+            <div><img className="w-100 p-2" src="./Assists/2.png" alt="" /></div>
+            <div><img className="w-100 p-2" src="./Assists/3.png" alt="" /></div>
           <div><img className="w-100 p-2" src="./Assists/4.png" alt="" /></div>
           <div><img className="w-100 p-2" src="./Assists/5.png" alt="" /></div>
           <div><img className="w-100 p-2" src="./Assists/6.png" alt="" /></div>

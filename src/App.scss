@@ -153,6 +153,18 @@ h2
   {
     width: 27%;
   }
+
+  
+
+}
+.card{
+  position: relative;
+  
+  .readmore
+  {
+    position: absolute;
+    bottom: 0;right: 0;
+  }
 }
 //feature-section end
 
